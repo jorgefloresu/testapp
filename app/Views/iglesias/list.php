@@ -38,7 +38,7 @@
 </table>
 
 <?php else: ?>
-<h2>You don't have any iglesia yet!</h3>
+<h2>No se han agregado Iglesias aun!</h3>
 <?php endif ?>
 
 <a href="iglesias/create">

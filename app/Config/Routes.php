@@ -32,6 +32,7 @@ $routes->setAutoRoute(false);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 //$routes->get('/', 'Home::index');
+$routes->match(['get', 'post'], 'iglesias/xml', 'Iglesias::xml');
 
 $routes->match(['get', 'post'], 'iglesias/create', 'Iglesias::create');
 $routes->match(['get', 'post'], 'iglesias/edit/(:segment)', 'Iglesias::edit/$1');
